@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wijaya Farm - Peternakan Kambing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                Wijaya Farm
+            </div>
+            <ul class="nav-links">
+                <li><a href="#beranda"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="#tentang"><i class="fas fa-info-circle"></i> Tentang Kami</a></li>
+                <li><a href="#produk"><i class="fas fa-box"></i> Produk</a></li>
+                <li><a href="#galeri"><i class="fas fa-images"></i> Galeri</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#testimoni"><i class="fas fa-comments"></i> Testimoni</a></li>
+                <li><a href="#pemesanan"><i class="fas fa-shopping-cart"></i> Pemesanan</a></li>
+                <li><a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beranda" class="hero">
+            <div class="hero-content">
+                <h1>Selamat Datang di<br>Wijaya Farm</h1>
+                <p>Peternakan kambing modern dengan standar kualitas premium untuk kebutuhan Anda</p>
+                <div class="hero-buttons">
+                    <a href="#produk" class="cta-button primary">Lihat Produk</a>
+                    <a href="#kontak" class="cta-button secondary">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="tentang" class="about">
+            <h2>Tentang Kami</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/logo2.jpg" alt="Wijaya Farm">
+                </div>
+                <div class="about-text">
+                    <h3>Peternakan Modern & Berkelanjutan</h3>
+                    <p>Wijaya Farm adalah peternakan kambing modern yang berdedikasi untuk menghasilkan produk berkualitas tinggi dengan memperhatikan kesejahteraan hewan dan keberlanjutan lingkungan.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-medal"></i>
+                            <h4>Kualitas Terbaik</h4>
+                            <p>Menghasilkan produk berkualitas premium dengan standar kesehatan yang ketat</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>100% Alami</h4>
+                            <p>Pakan dan perawatan menggunakan bahan-bahan alami dan organik</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Bersertifikat</h4>
+                            <p>Memiliki sertifikasi standar peternakan nasional</p>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Kambing Ternak</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Tahun Pengalaman</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Pelanggan Puas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produk" class="products">
+            <h2>Produk Kami</h2>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="kambing">Kambing</button>
+                <button class="category-btn" data-category="susu">Produk Susu</button>
+                <button class="category-btn" data-category="pupuk">Pupuk Organik</button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="kambing">
+                    <div class="product-image">
+                        <img src="images/d1.jpg" alt="Kambing Etawa">
+                        <div class="product-overlay">
+                            <button class="detail-btn">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kambing Etawa</h3>
+                        <div class="product-specs">
+                            <span><i class="fas fa-weight"></i> 40-60 kg</span>
+                            <span><i class="fas fa-venus-mars"></i> Jantan/Betina</span>
+                        </div>
+                        <p>Kambing Etawa berkualitas premium dengan genetik unggul, cocok untuk pengembangbiakan</p>
+                        <div class="product-price">
+                            <span class="price">Mulai Rp 5.000.000</span>
+                            <a href="#pemesanan" class="buy-btn">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="susu">
+                    <div class="product-image">
+                        <img src="images/d3.jpg" alt="Susu Kambing Segar">
+                        <div class="product-overlay">
+                            <button class="detail-btn">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Susu Kambing Segar</h3>
+                        <div class="product-specs">
+                            <span><i class="fas fa-wine-bottle"></i> 1 Liter</span>
+                            <span><i class="fas fa-temperature-low"></i> Fresh</span>
+                        </div>
+                        <p>Susu kambing murni dengan kandungan nutrisi tinggi, dipasteurisasi dengan standar BPOM</p>
+                        <div class="product-price">
+                            <span class="price">Rp 50.000/liter</span>
+                            <a href="#pemesanan" class="buy-btn">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pupuk">
+                    <div class="product-image">
+                        <img src="images/anak2.jpg" alt="Pupuk Organik">
+                        <div class="product-overlay">
+                            <button class="detail-btn">Lihat Detail</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pupuk Organik</h3>
+                        <div class="product-specs">
+                            <span><i class="fas fa-box"></i> 25 kg</span>
+                            <span><i class="fas fa-leaf"></i> 100% Organik</span>
+                        </div>
+                        <p>Pupuk organik berkualitas dari kotoran kambing, kaya nutrisi untuk berbagai jenis tanaman</p>
+                        <div class="product-price">
+                            <span class="price">Rp 75.000/karung</span>
+                            <a href="#pemesanan" class="buy-btn">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeri" class="gallery">
+            <h2>Galeri Peternakan</h2>
+            <div class="gallery-categories">
+                <button class="gallery-btn active" data-category="all">Semua</button>
+                <button class="gallery-btn" data-category="kandang">Kandang</button>
+                <button class="gallery-btn" data-category="ternak">Ternak</button>
+                <button class="gallery-btn" data-category="produksi">Produksi</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="kandang">
+                    <img src="images/d1.jpg" alt="Kandang Modern">
+                    <div class="gallery-overlay">
+                        <h3>Kandang Modern</h3>
+                        <p>Fasilitas kandang dengan standar kesehatan tinggi</p>
+                        <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ternak">
+                    <img src="images/d3.jpg" alt="Kambing Etawa">
+                    <div class="gallery-overlay">
+                        <h3>Kambing Etawa</h3>
+                        <p>Koleksi kambing etawa berkualitas</p>
+                        <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="produksi">
+                    <img src="images/anak3.jpg" alt="Proses Pemerahan">
+                    <div class="gallery-overlay">
+                        <h3>Proses Pemerahan</h3>
+                        <p>Pemerahan susu dengan peralatan modern</p>
+                        <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ternak">
+                    <img src="images/anak2.jpg" alt="Kambing Peranakan">
+                    <div class="gallery-overlay">
+                        <h3>Kambing Peranakan</h3>
+                        <p>Hasil pengembangbiakan terbaik</p>
+                        <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kandang">
+                    <img src="images/anak1.jpg" alt="Area Pemberian Pakan">
+                    <div class="gallery-overlay">
+                        <h3>Area Pemberian Pakan</h3>
+                        <p>Sistem pemberian pakan yang teratur</p>
+                        <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="produksi">
+                    <img src="images/d3.jpg" alt="Produk Susu">
+                    <div class="gallery-overlay">
+                        <h3>Produk Susu</h3>
+                        <p>Pengemasan produk susu segar</p>
+                        <button class="gallery-zoom"><i class="fas fa-search-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal untuk tampilan gambar besar -->
+            <div class="gallery-modal">
+                <span class="modal-close"><i class="fas fa-times"></i></span>
+                <img src="" alt="" class="modal-image">
+                <div class="modal-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="pemesanan" class="order">
+            <h2>Pemesanan Online</h2>
+            <div class="order-container">
+                <div class="order-steps">
+                    <div class="step active">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Pilih Produk</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Isi Data</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-text">Konfirmasi</span>
+                    </div>
+                </div>
+
+                <form id="order-form" class="multi-step-form">
+                    <!-- Step 1: Pilih Produk -->
+                    <div class="form-step active" data-step="1">
+                        <div class="product-selection">
+                            <div class="product-option">
+                                <input type="radio" name="product" id="kambing-etawa" value="kambing-etawa" required>
+                                <label for="kambing-etawa">
+                                    <div class="product-icon">
+                                        <i class="fas fa-horse"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>Kambing Etawa</h3>
+                                        <p class="product-price">Rp 5.000.000/ekor</p>
+                                        <p class="product-desc">Kambing berkualitas premium dengan genetik unggul</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="product-option">
+                                <input type="radio" name="product" id="susu-kambing" value="susu-kambing">
+                                <label for="susu-kambing">
+                                    <div class="product-icon">
+                                        <i class="fas fa-wine-bottle"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>Susu Kambing Segar</h3>
+                                        <p class="product-price">Rp 50.000/liter</p>
+                                        <p class="product-desc">Susu kambing murni dengan kandungan nutrisi tinggi</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="product-option">
+                                <input type="radio" name="product" id="pupuk-organik" value="pupuk-organik">
+                                <label for="pupuk-organik">
+                                    <div class="product-icon">
+                                        <i class="fas fa-seedling"></i>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3>Pupuk Organik</h3>
+                                        <p class="product-price">Rp 75.000/karung</p>
+                                        <p class="product-desc">Pupuk organik berkualitas dari kotoran kambing</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quantity-selector">
+                            <label for="quantity">Jumlah:</label>
+                            <div class="quantity-controls">
+                                <button type="button" class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                                <button type="button" class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="next-btn">Lanjutkan <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Data Pemesan -->
+                    <div class="form-step" data-step="2">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat Pengiriman</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Kembali</button>
+                            <button type="button" class="next-btn">Lanjutkan <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Konfirmasi -->
+                    <div class="form-step" data-step="3">
+                        <div class="order-summary">
+                            <h3>Ringkasan Pesanan</h3>
+                            <div class="summary-content">
+                                <!-- Diisi oleh JavaScript -->
+                            </div>
+                            <div class="total-price">
+                                <span>Total:</span>
+                                <span class="price">Rp 0</span>
+                            </div>
+                        </div>
+                        <div class="payment-method">
+                            <h3>Metode Pembayaran</h3>
+                            <div class="payment-options">
+                                <div class="payment-option">
+                                    <input type="radio" name="payment" id="transfer" value="transfer" required>
+                                    <label for="transfer">Transfer Bank</label>
+                                </div>
+                                <div class="payment-option">
+                                    <input type="radio" name="payment" id="cod" value="cod">
+                                    <label for="cod">Bayar di Tempat (COD)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Kembali</button>
+                            <button type="submit" class="submit-btn">Pesan Sekarang <i class="fas fa-check"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="testimoni" class="testimonials">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-profile">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Kualitas kambing dari Wijaya Farm sangat bagus dan sehat. Pelayanannya juga memuaskan!"</p>
+                    <div class="testimonial-info">
+                        <p class="testimonial-author">Ahmad Sulaiman</p>
+                        <p class="testimonial-role">Peternak</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-profile">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Susu kambing segar yang dijual sangat berkualitas dan higienis. Anak-anak suka sekali!"</p>
+                    <div class="testimonial-info">
+                        <p class="testimonial-author">Siti Aminah</p>
+                        <p class="testimonial-role">Ibu Rumah Tangga</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-profile">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Pupuk organik dari Wijaya Farm membuat tanaman saya tumbuh subur. Sangat recommended!"</p>
+                    <div class="testimonial-info">
+                        <p class="testimonial-author">Budi Santoso</p>
+                        <p class="testimonial-role">Petani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="nav-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <h2>Blog & Artikel</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 20 Mar 2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3>Tips Sukses Beternak Kambing</h3>
+                        <p class="blog-excerpt">Pelajari cara-cara efektif dalam memelihara kambing agar menghasilkan ternak yang berkualitas. Mulai dari pemilihan bibit, pemberian pakan yang tepat, hingga perawatan kesehatan rutin...</p>
+                        <div class="blog-tags">
+                            <span><i class="fas fa-tag"></i> Peternakan</span>
+                            <span><i class="fas fa-tag"></i> Tips</span>
+                        </div>
+                        <button class="read-more" data-article="article1">Baca Selengkapnya</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 18 Mar 2024</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3>Manfaat Susu Kambing bagi Kesehatan</h3>
+                        <p class="blog-excerpt">Ketahui berbagai kandungan nutrisi dan manfaat mengonsumsi susu kambing secara rutin. Dari meningkatkan sistem imun hingga menjaga kesehatan tulang...</p>
+                        <div class="blog-tags">
+                            <span><i class="fas fa-tag"></i> Kesehatan</span>
+                            <span><i class="fas fa-tag"></i> Produk</span>
+                        </div>
+                        <button class="read-more" data-article="article2">Baca Selengkapnya</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Modal Article -->
+            <div class="article-modal">
+                <div class="article-content">
+                    <button class="close-article"><i class="fas fa-times"></i></button>
+                    <div class="article-body">
+                        <!-- Content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <h2>Ikuti Kami</h2>
+            <p class="social-text">Dapatkan informasi terbaru dan tips bermanfaat seputar peternakan</p>
+            <div class="social-links">
+                <a href="https://facebook.com/wijayafarmp" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                    <small>@wijayafarm</small>
+                </a>
+                <a href="https://instagram.com/wijayafarm__" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                    <small>@wijayafarm</small>
+                </a>
+                <a href="https://youtube.com/wijayafarm" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                    <small>Wijaya Farm Channel</small>
+                </a>
+                <a href="https://wa.me/628123456" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                    <small>+62 812-3456</small>
+                </a>
+            </div>
+        </section>
+
+        <section id="kontak" class="contact">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <h3>Alamat</h3>
+                            <p>Desa Kancilan<br>Kecamatan Kembang, Kabupaten Jepara</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-content">
+                            <h3>Telepon</h3>
+                            <p>+62 812-3456<br>+62 823-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@wijayafarm.com<br>cs@wijayafarm.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-content">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Sabtu: 08:00 - 17:00<br>Minggu: 09:00 - 15:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-header">
+                        <h3>Kirim Pesan</h3>
+                        <p>Silakan isi form di bawah ini untuk menghubungi kami</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-name">Nama Lengkap</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subjek</label>
+                        <select id="contact-subject" name="subject" required>
+                            <option value="">Pilih Subjek</option>
+                            <option value="info">Informasi Produk</option>
+                            <option value="order">Pemesanan</option>
+                            <option value="complaint">Keluhan</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Pesan</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Wijaya Farm</span>
+                </div>
+                <p>Peternakan kambing modern dengan standar kualitas terbaik</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com/wijayafarmp" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/wijayafarm__" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/628123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Desa Kancilan. Rt. 03. Rw. 03 Jepara, Jawa Tengah</p>
+                <p><i class="fas fa-phone"></i> +62 812-3456</p>
+                <p><i class="fas fa-envelope"></i> info@wijayafarm.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wijaya Farm. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
